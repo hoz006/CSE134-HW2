@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <!--<link href="styles/main.css" rel="stylesheet" />-->
+    <style>
+        header {border-style: none none solid none;}
+        footer {border-style: solid none none none;}
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <nav>
+        <a href="#Introduction">Introduction</a>
+        <a href="#Education">Education</a>
+        <a href="#Employment">Employment History</a>
+    </nav>
+
+    <main>
+        <h1>Experimental Page</h1>
+
+        <section id="Form">
+            <h2>Choose a project</h2>
+            <form>
+                <fieldset>
+                  <legend>Project Details</legend>
+                  <label for="projects">Choose a project:</label>
+                  <select name="projects" id="projects">
+                    <optgroup label="Project 1">
+                      <option value="section1">Section1</option>
+                      <option value="section2">Section 2</option>
+                    </optgroup>
+                    <optgroup label="Project 2">
+                      <option value="section1">Section1</option>
+                      <option value="section2">Section 2</option>
+                    </optgroup>
+                  </select>
+
+                  <label for="project-thoughts">Your thoughts:</label>
+                  <textarea id="project-thoughts" name="project-thoughts"></textarea>
+
+                  <datalist id="examples">
+                    <option value="Example 1">
+                    <option value="Example 2">
+                  </datalist>
+
+                  <input list="examples" name="example">
+
+                  <input type="submit" value="Submit">
+                  <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+
+
+        <figure>
+          <img src="Image/image.jpg" alt="Image description">
+          <figcaption>This is an example image</figcaption>
+        </figure>
+
+        <table>
+          <caption>This is a table caption</caption>
+          <colgroup>
+            <col span="2">
+          </colgroup>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+          </tr>
+          <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+          </tr>
+        </table>
+
+        <template id="myTemplate">
+          <div>Template content here</div>
+        </template>
+
+        <h3>Chart canvas</h3>
+        <canvas id="myCanvas" width="200" height="100">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(20, 20, 150, 75);
+        </script>
+        
+    <p>This is a paragraph with an inline SVG: 
+    <svg width="50" height="50">
+      <circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="red" />
+    </svg> 
+    inside of it.</p>
+    
+    </main>
+
+    <footer>
+        <p>Updated: July 2023 by Hongrui Zhang</p>
+        <hr>
+        <p><small>&copy; 2023 Hongrui Zhang</small></p>
+    </footer>
+</body>
+
+</html>
