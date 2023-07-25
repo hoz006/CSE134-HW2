@@ -3,8 +3,16 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="description" content="Personal portfolio page for Hongrui Zhang" />
+	<meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Resume" />
+    <meta name="author" content="Hongrui Zhang" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Hongrui Zhang</title>
     <link href="images/web_icon.ico" rel="icon"/>
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="styles/main.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 680px) and (max-width: 1023px)" href="styles/tablet.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 679px)" href="styles/mobile.css"/>
 
     <style>
         header {border-style: none none solid none;}
@@ -14,10 +22,10 @@
 
 <body>
     <header>
-        <h3>About me</h3>
-        <a href="test.html"><h3>Test Page</h3></a>
-        <a href="project.html"><h3>Project</h3> </a>
-        <a href="interest.html"><h3>Interest</h3></a>
+        <a href="index.html">Home</a>
+        <a href="test.html">Test Page</a>
+        <a href="project.html">Project </a>
+        <a href="interest.html">Interest</a>
     </header>
 
     <nav>
@@ -26,21 +34,50 @@
         <a href="#Employment">Employment History</a>
     </nav>
 
+
     <main>
-        <h1>Hongrui Zhang</h1>
+        <a href="#Introduction" id="scroll-to-top">Top</a>
+        <h1 class="Title">Hongrui Zhang</h1>
 
         <section id="Introduction">
             <h2>Introduction</h2>
             <picture>
-                <source srcset="ProfilePic.webp" type="image/webp">
-                <img src="ProfilePic.jpeg" alt="Profile Picture" />
+                <source 
+                    srcset="images/mid_profile_pic.avif"
+                    sizes="(min-width: 680px) and (max-width: 1023px) 800w"
+                    type="image/avif">
+                <source 
+                    srcset="images/mid_profile_pic.webp"
+                    sizes="(min-width: 680px) and (max-width: 1023px) 800w"
+                    type="image/webp">
+                <source 
+                    srcset="images/wide_profile_pic.avif"
+                    sizes="(min-width: 1024px) 1024w"
+                    type="image/avif">
+                <source 
+                    srcset="images/profile_pic.avif"
+                    sizes="(max-width: 679px) 679w"
+                    type="image/avif">
+                <source 
+                    srcset="images/wide_profile_pic.webp"
+                    sizes="(min-width: 1024px) 1024w"
+                    type="image/webp">
+                <source 
+                    srcset="images/profile_pic.webp"
+                    sizes="(max-width: 679px) 679w"
+                    type="image/webp">
+                <img 
+                    srcset="images/profile_pic.jpg"
+                    src="images/profile_pic.jpg"
+                    alt="Profile Picture"/>
             </picture>
             <p>Welcome to <i>Hongrui's</i> website! <br>This is a short introduction about me.</p>
         </section>
         <hr>
         <section id="Education" class="Education">
             <h2>Education</h2>
-            <p>Studied at: <strong><b>University of California - San Diego</b></strong></p>
+            <p><strong>B.S. Compupter Engineering, <b>University of California - San Diego</b></strong><br>Sep, 2019 ~ Present</p>
+            <p><strong>KUASU Program, <b>Kyoto University</b></strong><br>July, 2021 ~ Aug, 2022</p>
         </section>
         <hr>
         <section id="Employment">
@@ -52,13 +89,16 @@
                 </details></aside>
                 <ul>
                     <li><em>Co-founder</em> of company</li>
-                    <li>Performed a shallow market research on the subculture by using data gathered from social media and related website</li>
+                    <li>Performed a shallow market research on the subculture by using data gathered from social media and related website.</li>
+                    <li>Produced and shot a 60% view rate video advertisement, using our CTR view rate model, with a >43,000 views, by leading a 20 men team on the video project.</li>
+                    <li>Started the build of company website and app extension on Wechat, allowing user to purchase ticket for company conventions and receive news and notification.</li>
+                    <li>Earned >$20,000 income in the second and third quarter after the founding of the companym, by designing multiple community conventions and events.</li>
                 </ul>
         </section>
         <hr>
         <section id="ContactInfo">
             <details>
-                <summary><h3>Contact Information</h3></summary>
+                <summary><em>Contact Information</em></summary>
                 <p>Email: hoz006@ucsd.com</p>
             </details>
         </section>
