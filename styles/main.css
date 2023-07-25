@@ -12,7 +12,6 @@ body {
 }
 @font-face {
   font-family: "Literata";
-  font-style: bold;
   font-weight: 400;
   src: url("../fonts/Literata/static/Literata-Bold.ttf") format("truetype");
 }
@@ -23,17 +22,16 @@ body {
   src: url("../fonts/Literata/static/Literata-Italic.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Catamaran", Helvetica, sans-serif;
-    font-style: black;
+    font-family: "Catamaran";
     font-weight: 400;
     src: url("../fonts/Catamaran/static/Catamaran-Black.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Alegreya", "Brush Script MT", cursive;
+    font-family: "Alegreya";
     src: url("../fonts/Alegreya/static/Alegreya-BoldItalic.ttf");
 }
 @font-face {
-    font-family: "Rasa", Helvetica, sans-serif;
+    font-family: "Rasa";
     src: url("../fonts/Rasa/static/Rasa-Regular.ttf");
 }
 
@@ -45,7 +43,7 @@ header {
   padding: 30px 0;
   font-family: "Literata", serif;
   color: white;
-  font-family: "Catamaran";
+  font-family: "Catamaran", Helvetica, sans-serif;
   font-size: 30px;
 }
 
@@ -95,8 +93,7 @@ img{
 }
 
 .Title {
-    font-family: "Catamaran";
-    font-style: bold;
+    font-family: "Catamaran", Helvetica, sans-serif;
     font-size: 60px;
     text-align: center;
     margin-block-start: 50px;
@@ -104,11 +101,11 @@ img{
 }
 
 h2 {
-    font-family: "Alegreya";
+    font-family: "Alegreya", "Brush Script MT", cursive;
 }
 
 main {
-  font-family: "Rasa";
+  font-family: "Rasa", Helvetica, sans-serif;
   font-size: 20px;
   text-align: center;
 }
@@ -137,7 +134,7 @@ hr {
 
 /****** footer ******/
 footer {
-  font-family: "Rasa";
+  font-family: "Rasa", Helvetica, sans-serif;
   font-size: small;
   text-align: center;
 }
